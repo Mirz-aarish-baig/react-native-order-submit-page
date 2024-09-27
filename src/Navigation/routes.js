@@ -2,7 +2,7 @@ import HomeScreen from "../screens/Dashboard/Home";
 
 import MenuScreen from "../screens/Dashboard/Menu";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
+import ContactScreen from "../screens/Dashboard/Contact";
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
         headerShown: false,
       }} />
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen  name="Contact Support" component={ContactScreen} />
+
     </Stack.Navigator>
   );
 }
