@@ -1,20 +1,21 @@
-import HomeScreen from "../screens/Dashboard/Home";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MenuScreen from "../screens/Dashboard/Menu";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import ContactScreen from "../screens/Dashboard/Contact";
+import HomeScreen from "../screens/Dashboard/Home";
+import Contact from "../screens/Dashboard/Contact";
+import Profile from "../screens/Dashboard/Profile";
+
 const Stack = createNativeStackNavigator();
+
+const opt = { headerShown: false };
 
 function App() {
   return (
-    <Stack.Navigator initialRouteName="Contact Support">
-      <Stack.Screen
-        name="Menu"
-        component={MenuScreen}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Contact Support" component={ContactScreen} />
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Menu" component={MenuScreen} options={opt} />
+      <Stack.Screen name="Home" component={HomeScreen} options={opt} />
+      <Stack.Screen name="Home" component={Profile} options={opt} />
+      <Stack.Screen name="Contact Support" component={Contact} options={opt} />
     </Stack.Navigator>
   );
 }
