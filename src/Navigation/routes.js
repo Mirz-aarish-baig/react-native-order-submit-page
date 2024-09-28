@@ -14,7 +14,7 @@ function App() {
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Menu" component={MenuScreen} options={opt} />
       <Stack.Screen name="Home" component={HomeScreen} options={opt} />
-      <Stack.Screen name="Home" component={Profile} options={opt} />
+      <Stack.Screen name="Profile" component={Profile} options={opt} />
       <Stack.Screen name="Contact Support" component={Contact} options={opt} />
     </Stack.Navigator>
   );
