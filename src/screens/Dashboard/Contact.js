@@ -23,7 +23,7 @@ function ContactScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.contain}>
+    <ScrollView automaticallyAdjustKeyboardInsets contentContainerStyle={styles.contain}>
       <View style={styles.contain}>
         <Image
           source={require("../../../assets/Contact.png")}
