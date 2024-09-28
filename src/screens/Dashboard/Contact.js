@@ -6,6 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  Dimensions,
 } from "react-native";
 import { colors } from "../../utils/colors";
 import React, { useState } from "react";
@@ -22,7 +23,7 @@ function ContactScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.contain}>
       <View style={styles.contain}>
         <Image
           source={require("../../../assets/Contact.png")}
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
 
   label: {
     fontSize: 15,
-    width: 280,
+    width: Dimensions.get("window").width * .9,
     color: "gray",
     marginBottom: 10,
   },
@@ -92,8 +93,8 @@ const styles = StyleSheet.create({
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
-    borderRadius: 10,
-    width: 280,
+    borderRadius: 7,
+    width: Dimensions.get("window").width * .9,
     marginBottom: 20,
     paddingLeft: 10,
   },
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: colors.primary,
-    paddingHorizontal: 122,
+    width: Dimensions.get("window").width * .9,
     padding: 15,
     marginTop: 10,
     borderRadius: 10,

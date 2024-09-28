@@ -7,13 +7,14 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Menu" component={MenuScreen} options={{
-        headerShown: false,
-      }} />
+    <Stack.Navigator initialRouteName="Contact Support">
+      <Stack.Screen
+        name="Menu"
+        component={MenuScreen}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen  name="Contact Support" component={ContactScreen} />
-
+      <Stack.Screen name="Contact Support" component={ContactScreen} />
     </Stack.Navigator>
   );
 }
