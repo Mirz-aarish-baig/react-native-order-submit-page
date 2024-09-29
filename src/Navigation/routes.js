@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import splashscreen from "../screens/admin-panel/splashscreen";
 
 import MenuScreen from "../screens/Dashboard/Menu";
 import HomeScreen from "../screens/Dashboard/Home";
@@ -12,12 +13,7 @@ const opt = { headerShown: false };
 
 function App() {
   return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Menu" component={MenuScreen} options={opt} />
-      <Stack.Screen name="Home" component={HomeScreen} options={opt} />
-      <Stack.Screen name="Profile" component={Profile} options={opt} />
-      <Stack.Screen name="Contact Support" component={Contact} options={opt} />
-      <Stack.Screen name="Decline Report" component={Decline} options={opt} />
+
     </Stack.Navigator>
   );
 }
