@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet,  } from "react-native";
 import {colors} from "../../utils/colors";
 
 function Home() {
